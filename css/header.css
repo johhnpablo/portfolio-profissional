@@ -22,10 +22,9 @@
   text-decoration: none;
   color: #141414;
   display: block;
-}
-.header-menu a::hover{
-    cursor: pointer;
-    color: #cee0fa;
+  &:active{
+    color: aqua;
+  }
 }
 
 @media (max-width: 750px) {
