@@ -1,0 +1,111 @@
+.experiencia{
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia .sub-title{
+  color: #cee0fa;
+}
+
+.experiencia-text{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.experiencia-text strong, b {
+  color: #141414;
+}
+
+.empresa{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background:#dce9fa7c ;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.empresa::before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#1C5DDA, #35AEF2);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.empresa-ano{
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  text-align: center;
+  width: 80px;
+  color: #525252;
+  font-size: .875rem;
+}
+
+.empresa-title{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto{
+  font-size: .875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.empresa-skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-skills li{
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 5px;
+  
+}
+
+@media (max-width: 750px) {
+  .experiencia{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .sub-title{
+    color: #141414;
+  }
+  .experiencia-text{
+    font-size: 1.25rem;
+  }
+  .empresa-ano{
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+    color: #35AEF2;
+    opacity: 50%;
+  }
+}
+
+@media (max-width: 400px){
+  .empresa{
+    grid-template-columns: 1fr;
+  }
+}
