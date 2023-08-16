@@ -23,6 +23,10 @@
   color: #141414;
   display: block;
 }
+.header-menu a::hover{
+    cursor: pointer;
+    color: #cee0fa;
+}
 
 @media (max-width: 750px) {
   .header{
